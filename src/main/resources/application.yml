@@ -1,0 +1,22 @@
+server: 
+  port: 9001
+spring: 
+  datasource: 
+    ddl-auto: create-drop
+    driver-class-name: org.postgresql.Driver
+    driverClassName: org.postgresql.Driver
+    password: s3cret
+    platform: postgresql
+    url: "jdbc:postgresql://localhost:5432/alfred"
+    username: docker
+    profile: dev
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: false
+  hibernate:
+    dialect:org.hibernate.dialect.PostgreSQLDialect  
